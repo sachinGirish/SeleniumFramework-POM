@@ -1,2 +1,2 @@
-# SeleniunmFramework-POM
-SeleniunmFramework-POM
+# SeleniumFramework-POM
+SeleniumFramework-POM
