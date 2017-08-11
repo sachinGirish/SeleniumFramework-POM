@@ -1,0 +1,1 @@
+mvn clean & mvn test -DsuiteXmlFile=testng.xml & java -jar EmailSummaryReport.jar

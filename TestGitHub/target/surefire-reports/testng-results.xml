@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[Launched Url: https://github.com/login]]>
+    </line>
+    <line>
+      <![CDATA[Learn Git and GitHub without any code!]]>
+    </line>
+    <line>
+      <![CDATA[Launched Url: https://github.com/login]]>
+    </line>
+    <line>
+      <![CDATA[Launched Url: https://github.com/login]]>
+    </line>
+    <line>
+      <![CDATA[Incorrect username or password.]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="102659" started-at="2017-08-11T08:58:02Z" finished-at="2017-08-11T08:59:44Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="102659" started-at="2017-08-11T08:58:02Z" finished-at="2017-08-11T08:59:44Z">
+      <class name="signIn.TC_02_SignIn_InValidUserLogin">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:signIn.TC_02_SignIn_InValidUserLogin@68837a77]" name="setUp" is-config="true" duration-ms="16279" started-at="2017-08-11T14:29:21Z" finished-at="2017-08-11T14:29:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Launched Url: https://github.com/login]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHomePage()[pri:0, instance:signIn.TC_02_SignIn_InValidUserLogin@68837a77]" name="verifyHomePage" duration-ms="6408" started-at="2017-08-11T14:29:38Z" finished-at="2017-08-11T14:29:44Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Incorrect username or password.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyHomePage -->
+        <test-method status="PASS" signature="catchExceptions(org.testng.ITestResult)[pri:0, instance:signIn.TC_02_SignIn_InValidUserLogin@68837a77]" name="catchExceptions" is-config="true" duration-ms="0" started-at="2017-08-11T14:29:44Z" finished-at="2017-08-11T14:29:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomePage status=SUCCESS method=TC_02_SignIn_InValidUserLogin.verifyHomePage()[pri:0, instance:signIn.TC_02_SignIn_InValidUserLogin@68837a77] output=Incorrect username or password.]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- catchExceptions -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:signIn.TC_02_SignIn_InValidUserLogin@68837a77]" name="tearDown" is-config="true" duration-ms="546" started-at="2017-08-11T14:29:44Z" finished-at="2017-08-11T14:29:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- signIn.TC_02_SignIn_InValidUserLogin -->
+      <class name="signIn.TC_02_SignIn_InValidUserLoginFail">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:signIn.TC_02_SignIn_InValidUserLoginFail@2d554825]" name="setUp" is-config="true" duration-ms="18016" started-at="2017-08-11T14:28:28Z" finished-at="2017-08-11T14:28:46Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Launched Url: https://github.com/login]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyHomePage()[pri:0, instance:signIn.TC_02_SignIn_InValidUserLoginFail@2d554825]" name="verifyHomePage" duration-ms="34402" started-at="2017-08-11T14:28:46Z" finished-at="2017-08-11T14:29:20Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#js-pjax-container > div.shelf.intro-shelf.js-notice > div > div > h2"}
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'SACHIN', ip: '192.168.109.2', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\SACHIN~1\AppData\Local\Temp\scoped_dir7740_18265}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: c16f4b4754b6d2431b9686f7af44fe4d
+*** Element info: {Using=css selector, value=#js-pjax-container > div.shelf.intro-shelf.js-notice > div > div > h2}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#js-pjax-container > div.shelf.intro-shelf.js-notice > div > div > h2"}
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'SACHIN', ip: '192.168.109.2', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\SACHIN~1\AppData\Local\Temp\scoped_dir7740_18265}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: c16f4b4754b6d2431b9686f7af44fe4d
+*** Element info: {Using=css selector, value=#js-pjax-container > div.shelf.intro-shelf.js-notice > div > div > h2}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:501)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at pages.web.HomePage.verifyHomePageText(HomePage.java:20)
+	at signIn.TC_02_SignIn_InValidUserLoginFail.verifyHomePage(TC_02_SignIn_InValidUserLoginFail.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePage -->
+        <test-method status="PASS" signature="catchExceptions(org.testng.ITestResult)[pri:0, instance:signIn.TC_02_SignIn_InValidUserLoginFail@2d554825]" name="catchExceptions" is-config="true" duration-ms="907" started-at="2017-08-11T14:29:20Z" finished-at="2017-08-11T14:29:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomePage status=FAILURE method=TC_02_SignIn_InValidUserLoginFail.verifyHomePage()[pri:0, instance:signIn.TC_02_SignIn_InValidUserLoginFail@2d554825] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- catchExceptions -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:signIn.TC_02_SignIn_InValidUserLoginFail@2d554825]" name="tearDown" is-config="true" duration-ms="366" started-at="2017-08-11T14:29:21Z" finished-at="2017-08-11T14:29:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- signIn.TC_02_SignIn_InValidUserLoginFail -->
+      <class name="signIn.TC_01_SignIn_ValidUserLogin">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:signIn.TC_01_SignIn_ValidUserLogin@77b52d12]" name="setUp" is-config="true" duration-ms="17444" started-at="2017-08-11T14:28:02Z" finished-at="2017-08-11T14:28:19Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Launched Url: https://github.com/login]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHomePage()[pri:0, instance:signIn.TC_01_SignIn_ValidUserLogin@77b52d12]" name="verifyHomePage" duration-ms="7693" started-at="2017-08-11T14:28:19Z" finished-at="2017-08-11T14:28:27Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Learn Git and GitHub without any code!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyHomePage -->
+        <test-method status="PASS" signature="catchExceptions(org.testng.ITestResult)[pri:0, instance:signIn.TC_01_SignIn_ValidUserLogin@77b52d12]" name="catchExceptions" is-config="true" duration-ms="2" started-at="2017-08-11T14:28:27Z" finished-at="2017-08-11T14:28:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomePage status=SUCCESS method=TC_01_SignIn_ValidUserLogin.verifyHomePage()[pri:0, instance:signIn.TC_01_SignIn_ValidUserLogin@77b52d12] output=Learn Git and GitHub without any code!]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- catchExceptions -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:signIn.TC_01_SignIn_ValidUserLogin@77b52d12]" name="tearDown" is-config="true" duration-ms="483" started-at="2017-08-11T14:28:27Z" finished-at="2017-08-11T14:28:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- signIn.TC_01_SignIn_ValidUserLogin -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
