@@ -16,9 +16,9 @@ https://www.mkyong.com/maven/how-to-install-maven-in-windows/
 
 1.Navigate to TestGitHub folder from project folder
 
-2.Edit config.properties 
+2.Right Click & Edit config.properties file
 
-3.Then edit  #	Email Configuration
+3.Then go to #Email Configuration section & fill below Email Configuration settings
 
 fromEmail=xxxxxxxxxxxxxxxxxxx
 
