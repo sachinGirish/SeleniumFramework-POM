@@ -34,4 +34,6 @@ toEmails=xxxxxxxxxxxx
 
 1.Run execute.bat file from project folder. It will tigger maven clean & TestNG.xml file from CMD Line.
 
+https://youtu.be/4deChkfFddc
+
 
